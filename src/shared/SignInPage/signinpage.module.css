@@ -1,0 +1,36 @@
+.header {
+  margin-bottom: 100px;
+}
+
+.title {
+  font-family: 'Aggressive Angry Baby Killer', sans-serif;
+  color: var(--gray);
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.txt {
+  font-family: 'Aggressive Angry Baby Killer', sans-serif;
+  color: var(--gray);
+  font-size: 30px;
+}
+
+.form {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.signInBtn, .signInBtn:focus {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  text-align: center;
+  min-height: 100%;
+  padding-top: 9px;
+}
+
+.signInInput, .signInInput:focus {
+  border-radius: 5px 0 0 5px;
+  height: 100%;
+}

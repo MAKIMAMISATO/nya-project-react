@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.cdnfonts.com/css/la-oriental');
+@import url('https://fonts.cdnfonts.com/css/sci-fied-outline');
+@import url('https://fonts.cdnfonts.com/css/nechao-sharp');
+@import url('https://fonts.cdnfonts.com/css/zero-prime');
+@import url('https://fonts.cdnfonts.com/css/aggressive-angry-baby-killer');
+@import url('https://fonts.cdnfonts.com/css/rishgular');
+@import url('https://fonts.cdnfonts.com/css/andromeda');
+
+                
+
+:root {
+  --black:          rgb(0, 8, 17);
+  --gray-dark:      rgb(51, 65, 75);
+  --gray:           rgb(125, 154, 173);
+  --gray-light:     rgb(193, 201, 208);
+  --blue-1:         rgb(29, 93, 138);
+  --orange:         #065656;
+  --green:          #A4CC33;
+  --whiteLightness: 100%;
+  --white-t:        rgba(4, 3, 23, 0.4);
+  --aqua:           aqua;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--blue-1);
+  font-size: 20px;
+  line-height: 16px;
+  font-family: 'Roboto', serif;
+  font-family: 'Nechao Sharp', sans-serif;
+  font-family: 'Zero Prime', sans-serif;
+  font-family: 'rishgular try', sans-serif;
+  font-family: 'andromeda', sans-serif;
+  background-color: var(--black);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body:before {
+  content: '';
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.def-btn, .def-input, .def-btn:focus, .def-input:focus {
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  line-height: 16px;
+  color: var(--gray-light);
+  padding: 5px;
+  font-family: 'andromeda', sans-serif;
+  font-family: 'rishgular try', sans-serif;
+  
+}
+
+.def-btn {
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.def-input::placeholder {
+  color: var(--gray-dark);
+  font-size: 20px;
+  line-height: 16px;
+}
+
+.container {
+  padding: 0 165px;
+  max-width: 1440px;
+  margin: auto;
+}
