@@ -1,0 +1,13 @@
+.link {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.link:hover {
+  color: var(--gray-light);
+}
+
+.txt {
+  font-size: 30px;
+}
+

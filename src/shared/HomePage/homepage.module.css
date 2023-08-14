@@ -1,3 +1,18 @@
 .title {
   color: var(--blue-1);
+  line-height: 30px;
+}
+
+.header {
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.headerContainer {
+  border: 4px solid var(--blue-1);
+}
+
+.main {
+  display: flex;
+  gap: 20px;
 }

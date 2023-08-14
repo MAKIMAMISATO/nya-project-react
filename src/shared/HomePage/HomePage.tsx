@@ -1,20 +1,23 @@
 import React from 'react';
+import { SpecialBorderContainer } from '../SpecialBorderContainer';
 import styles from './homepage.module.css';
-// import '../../index.css'
-import {
-  useSearchParams,
-} from "react-router-dom"
-
+import { Sidebar } from './Sidebar';
+import { ContentArea } from './ContentArea';
 
 export function HomePage() {
-  const [queryParameters] = useSearchParams();
+  const storedUsername = localStorage.getItem('username');
 
   return (
     <div className='container'>
-      <header>
-      <h1 className={styles.title}>welcum {queryParameters.get("username")} ^ ^</h1>
-
+      <header className={styles.header}>
+        <SpecialBorderContainer padding='20px'>
+          <h1 className={styles.title}>welcum {storedUsername} ^ ^</h1>
+        </SpecialBorderContainer>
       </header>
+      <div className={styles.main}>
+        <Sidebar></Sidebar>
+        <ContentArea></ContentArea>
+      </div>
     </div>
   );
 }

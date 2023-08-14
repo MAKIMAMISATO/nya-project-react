@@ -1,18 +1,25 @@
 .header {
-  margin-bottom: 100px;
+  padding: 120px 0 0 0;
+  margin-bottom: 60px;
+}
+
+.title, .txt {
+  font-family: 'Aggressive Angry Baby Killer', sans-serif;
+  color: var(--gray);
+  text-align: center;
 }
 
 .title {
-  font-family: 'Aggressive Angry Baby Killer', sans-serif;
-  color: var(--gray);
+  margin: auto;
+  max-width: 600px;
+  margin-bottom: 50px;
   font-size: 70px;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 .txt {
-  font-family: 'Aggressive Angry Baby Killer', sans-serif;
-  color: var(--gray);
   font-size: 30px;
+  line-height: 30px;
 }
 
 .form {

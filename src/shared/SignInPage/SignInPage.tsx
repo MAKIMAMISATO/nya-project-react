@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './signinpage.module.css';
-import { Link } from '@reach/router';
+import { Link, navigate } from '@reach/router';
 
 export function SignInPage() {
   const [username, setUsername] = useState('');
@@ -9,7 +9,13 @@ export function SignInPage() {
     setUsername(event.target.value);
   };
 
+  const handleSignIn = () => {
+    localStorage.setItem('username', username); 
+    navigate(`/home`);
+  };
+
   return (
+    
     <div className="container">
       <header className={styles.header}>
         <h1 className={styles.title}>Wake the fuck up samurai</h1>
@@ -23,9 +29,12 @@ export function SignInPage() {
         value={username}
         onChange={handleInputChange}
       />
-        <Link className={`${styles.signInBtn} def-btn`} to={`/home?username=${username}`} onClick={() => {console.log("blyaa")}}>
-         Sign In
-        </Link>
+        <button
+          className={`${styles.signInBtn} def-btn`}
+          onClick={handleSignIn}
+        >
+          Sign In
+        </button>
       </form>
 
     </div>

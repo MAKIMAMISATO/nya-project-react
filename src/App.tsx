@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { SignInPage } from './shared/SignInPage';
 import { HomePage } from './shared/HomePage';
 import { Router, RouteComponentProps } from "@reach/router";

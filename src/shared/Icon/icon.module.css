@@ -1,0 +1,24 @@
+.s100>svg {
+  width: 100px;
+  height: 100px;
+}
+.s20>svg {
+  width: 20px;
+  height: 20px;
+}
+.s16>svg {
+  width: 16px;
+  height: 16px;
+}
+.s14>svg {
+  width: 14px;
+  height: 14px;
+}
+.s12>svg {
+  width: 12px;
+  height: 12px;
+}
+.s10>svg {
+  width: 4px;
+  height: 4%;
+}

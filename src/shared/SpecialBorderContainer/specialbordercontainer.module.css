@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top, .bottom {
+  background-color: var(--sb-color);
+  position: absolute;
+  right: var(--sb-corners);
+  left: var(--sb-corners);
+  height: 2px;
+}
+
+.top {
+  top: 0px;
+}
+
+.bottom {
+  bottom: 0px;
+}
+
+.left, .right {
+  background-color: var(--sb-color);
+  position: absolute;
+  top: var(--sb-corners);
+  bottom: var(--sb-corners);
+  width: 2px;
+}
+
+.left {
+  left: 0px;
+}
+
+.right {
+  right: 0px;
+}
+
